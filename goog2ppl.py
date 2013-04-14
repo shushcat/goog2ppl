@@ -10,16 +10,17 @@ outCard = []
 
 cardNum = 0
 for line in source:
-    fileName = open('tempname' + str(cardNum) + '.vcf', 'w')
     if not re.search(r'END:VCARD', line):
-        #outCard.append(line)
-        if re.search(r'(N:)(.+)(;;;)', line)
-        print line
-    '''
+        outCard.append(line)
+        if re.search(r'(N:)(.+)(;;;)', line):
+            contact = re.sub(r'(N:)(.+)(;;;)', r'\2.vcf', line)
+            contact = contact.replace(';','')
+            if re.search(r'(N:)(;;;)', line):
+                contact = 'MISSING CONTACT FIELD ' + str(cardNum) + contact
+        fileName = open(contact, 'w')
     elif re.search(r'END:VCARD', line):
         outCard.append(line)
         for line in outCard:
             fileName.write("%s" % line)
         outCard = []
         cardNum = cardNum + 1
-    '''
