@@ -3,7 +3,7 @@ goog2ppl
 
 A Python script to convert Google Contacts to a format readable by [ppl](http://ppladdressbook.org/).
 
-Takes a vcf files and splits it into separate cards named after after the
+Takes a vcf files and splits it into separate cards named after the
 camelcase contents of their `N:` (name) lines. 
 
 ##Caveats
