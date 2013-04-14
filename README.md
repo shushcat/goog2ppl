@@ -12,6 +12,7 @@ camelcase contents of their `N:` (name) lines.
 
 ##Usage
 From an initialized ppl directory:
+
 1. `./goog2ppl <contacts file>` to make cards for your contacts.
 
 2. `mv <contacts file> <contacts file>.bak` because I don't like it when people
