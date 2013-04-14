@@ -13,10 +13,10 @@ camelcase contents of their `N:` (name) lines.
 ##Usage
 From an initialized ppl directory:
 
-1. `./goog2ppl.py <contacts file>` to make cards for your contacts.
-
-2. `mv <contacts file> <contacts file>.bak` because I don't like it when people
+1. `mv <contacts file> <contacts file>.bak` because I don't like it when people
 get mad at me.
+
+2. `./goog2ppl.py <contacts file>` to make cards for your contacts.
 
 3. `git add *.vcf && git commit -a` to make the imported contacts visible
 to ppl.
